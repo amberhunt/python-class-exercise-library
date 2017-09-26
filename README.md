@@ -7,6 +7,11 @@ Exercise about objects & classes, using a library as an example
 
 Bob, a librarian, wants to create a book & add it to the library.
 
+## Check-in
+
+Bobby, a librarian, wants to check-in a book.
+* Our library doesn't have fines, yay.
+* Upon check-in, the system should check to see if there is a person waiting in the hold queue.
 
 ## Renewal
 
