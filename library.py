@@ -28,6 +28,15 @@ class Book:
             else (explain this person cannot borrow books)
 
         check_in(Book)
+        #def check_in(which_book)
+        #   if person is a librarian
+        #       check-in = clear due_date
+        #   else: "sorry, you can't check-in books"
+        #   is there a person in the hold queue?
+        #       no: do nothing
+        #       yes:
+        #           place book on hold for Person
+
         hold(book, hold_for_person)
         renew(book, new_return_date)
 
