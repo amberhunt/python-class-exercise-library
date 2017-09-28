@@ -15,6 +15,8 @@ class Book:
             hold queue
         __del__: gives away the book so that it is no longer in the library
     """
+    # pylint: disable=too-many-instance-attributes
+    # All are reasonable in this case.
 
     def __init__(self, title, author, subject, pub_date, call_number):
         """Creates a new book for the libary"""
