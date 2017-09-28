@@ -1,5 +1,26 @@
+"""Book class definition"""
+
+
 class Book:
+    """
+    Each book in the library is an instance of Book class
+
+    Methods:
+        __init__: creates a new book in the library
+        check_out: lends the book to a borrower
+        check_in: records that the book was returned
+        hold: places other potential borrowers in queue to borrow the book
+            when it has been returned
+        renew: allows the borrower to keep the book longer, if no one is in the
+            hold queue
+        __del__: gives away the book so that it is no longer in the library
+    """
+    # pylint: disable=too-many-instance-attributes
+    # All are reasonable in this case.
+
     def __init__(self, title, author, subject, pub_date, call_number):
+        """Creates a new book for the libary"""
+
         # if you are a librarian, you can do this
         self.title = title
         self.author = author
@@ -9,28 +30,4 @@ class Book:
         self.borrower = None
         self.return_date = None
         self.hold_for = None
-
-    # parameters:
-        # title: string
-        # author: string
-        # publication_date: date
-        # call_number: string
-        # subject: string
-        # borrower: Person
-        # return_date: date
-        # hold_for: Person
-
-    # methods:
-        # check_in(Book)
-        # hold(book, hold_for_person)
-        # renew(book, new_return_date)
-        # give_away(Book)
-
-        # if person is a librarian:
-        # title = input("Enter title")
-        # author = input("Enter one or more authors")
-        # subject = input("Enter one or more subjects")
-        # pub_date = input(date)
-        # call_number = input("Enter call number")
-        # else:
-        #     "Sorry, you can't add books."
+        # if not a librarian, explain that only a librarian can create books
