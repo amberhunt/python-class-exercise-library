@@ -12,5 +12,8 @@ def main():
     hound = Book("Hound of the Baskervilles")
     print(hound.title)
 
+    print("Imported function test:")
+    hound.test()
+
 
 main()

@@ -43,6 +43,7 @@ class Book:
 
     # import book.check-in
     # import book.check-out
-    # import book.giv-away
+    # import book.give-away
     # import book.hold
     # import book.renew
+    from book.test import test
