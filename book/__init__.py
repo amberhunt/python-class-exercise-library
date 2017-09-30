@@ -1,4 +1,4 @@
-"""Book class definition."""
+"""Assemble Book class into a package."""
 
 
 class Book:
@@ -9,16 +9,12 @@ class Book:
         check_in: records that the book was returned
         hold: places other potential borrowers in queue to borrow the book
             when it has been returned
-        renew: allows the borrower to keep the book longer, if no one is in the
-            hold queue
+        renew: allows the borrower to keep the book longer, if no one is in
+            the hold queue
         __del__: gives away the book so that it is no longer in the library
     """
     # pylint: disable=too-many-instance-attributes
     # All are reasonable in this case.
-
-    # import functions into the class from other files; e.g.,
-    # from book-renew import renew
-    # etc
 
     def __init__(self, title):
         # if you are a librarian, you can do this
@@ -44,3 +40,9 @@ class Book:
         self.__title = new_title
         print("Assumed you are a librarian. Title changed to: ", self.title)
         # else print an error message
+
+    # import book.check-in
+    # import book.check-out
+    # import book.giv-away
+    # import book.hold
+    # import book.renew
