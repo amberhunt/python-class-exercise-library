@@ -1,10 +1,8 @@
-"""Book class definition"""
+"""Book class definition."""
 
 
 class Book:
-    """
-    Each book in the library is an instance of Book class
-
+    """Each book in the library is an instance of Book class.
     Methods:
         __init__: creates a new book in the library
         check_out: lends the book to a borrower
@@ -18,16 +16,31 @@ class Book:
     # pylint: disable=too-many-instance-attributes
     # All are reasonable in this case.
 
-    def __init__(self, title, author, subject, pub_date, call_number):
-        """Creates a new book for the libary"""
+    # import functions into the class from other files; e.g.,
+    # from book-renew import renew
+    # etc
 
+    def __init__(self, title):
         # if you are a librarian, you can do this
-        self.title = title
-        self.author = author
-        self.publication_date = pub_date
-        self.subject = subject
-        self.call_number = call_number
-        self.borrower = None
-        self.return_date = None
-        self.hold_for = None
+        self.__title = title
+        # self.author = author
+        # self.publication_date = pub_date
+        # self.subject = subject
+        # self.call_number = call_number
+        # self.borrower = None
+        # self.return_date = None
+        # self.hold_for = None
         # if not a librarian, explain that only a librarian can create books
+
+    @property
+    def title(self):
+        """Returns book title to any caller."""
+        return self.__title
+
+    @title.setter
+    def title(self, new_title):
+        """Change book title. Only for librarians."""
+        # if you are a librarian, you can change the title of an existing book
+        self.__title = new_title
+        print("Assumed you are a librarian. Title changed to: ", self.title)
+        # else print an error message
