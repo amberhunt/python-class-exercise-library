@@ -21,4 +21,4 @@ Alice, a borrower, wants to renew a book so that she can continue to read it. Sh
 Alice, a borrower, wants to check out a book from the library. She asks Bob, a librarian, to check out the book to her her.
 * Books may only be checked out by librarians.
 * A book may only be checked out to one person at a time.
-* A book may be checked out for 60 days. 
+* The defauly checkout period is 180 days, but Bob can choose a different due date. 
