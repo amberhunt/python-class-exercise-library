@@ -15,3 +15,10 @@ Alice, a borrower, wants to renew a book so that she can continue to read it. Sh
 * The default renewal period is 60 days, but Bob can choose a different due date.
 * A book may be renewed within 30 days before its due (if no one is in the hold queue).
 * The renewal period starts from the day of the renewal request.
+
+## Check Out
+
+Alice, a borrower, wants to check out a book from the library. She asks Bob, a librarian, to check out the book to her her.
+* Books may only be checked out by librarians.
+* A book may only be checked out to one person at a time.
+* The defauly checkout period is 180 days, but Bob can choose a different due date. 
